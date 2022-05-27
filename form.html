@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="third.html">Game Genre</a></li>
+                        <li><a href="fourth.html">Gaming Devices</a></li>
+                    </ul>
+                </nav>
+            <h1>Register for gaming survey</h1>
+        </header>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+                <div>
+                    <div class="inputclass">
+                        <label for="firstName">First name:</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div class="inputclass">
+                        <label for="lastName">Last name:</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div class="inputclass">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
+                </div>
+
+                <div>
+                    <p>Choose your favorite game genre below. Pick one!</p>
+                </div>
+
+                <div class="radioset">
+                    <div>
+                        <input type="radio" id="shooter" name="fav-genre">
+                        <label for="shooter">Shooting-game</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="moba" name="fav-genre">
+                        <label for="moba">MOBA</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="fav-genre" id="rpg">
+                        <label for="rpg">Role-playing(RPG)</label>
+                    </div>
+                </div><br>
+
+                <div class="pa">
+                    <p1>This is only a fun survey to determine<br> which type of gamer you are and nothing else.</p1><br>
+                    <p2>We do not sell your information to third parties!</p2>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" name="Agree to Terms">
+                    <label for="terms">Agree to terms above.</label><br>
+                </div><br>
+
+                <div class="more-info">
+                    <label for="additional">Tell us more about your gaming experience (optional):</label>
+                    <textarea name="additional" id="addition" cols="30" rows="10"></textarea>
+                </div><br>
+
+                <div>
+                    <button type="submit" style="background-color: yellow;">Add this person</button>
+                </div>
+            </fieldset>
+        </form>
+        </body>
+    </head>
+</html>
